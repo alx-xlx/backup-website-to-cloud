@@ -14,6 +14,13 @@ BUT you can use this even for Wordpress and all other forums
 
 ![backup-flarum-google-drive](images/backup-flarum-google-drive.png)
 
+## Hello r4nchy, Please explain how will this work ?
+
+- a directory with current date and time will be created
+- zipped database & flarum folder will be stored in the newly created folder
+- we will push this backup to our Cloud
+- and delete the rest of the backups on our server which are older than 2 Days
+
 ```sh
 # #!/usr/bin/env bash
 NAMEDATE=`date +%F_%H-%M_%s`_`whoami` && echo $NAMEDATE
@@ -28,7 +35,7 @@ exit 0
 
 ## Configuration
 
-Create a Directory `flarum_backup` in your server
+Create a Directory `flarum_backup` on your server
 (e.g /home/HOSTINGUSERNAME/flarum_backup)
 
 Download [rclone](https://rclone.org/downloads/) . (For most it would be rclone Linux x64)
