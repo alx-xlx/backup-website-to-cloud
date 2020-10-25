@@ -71,7 +71,13 @@ Create a New Remote (in our case it is named `gdrive`)
 
 Choose `13` to select Google Drive as our Cloud Storage (you can choose other Storages from the list)
 
-It is recommended to use your own `CLIENT_ID` & `CLIENT_SECRET`, refer [here](https://github.com/alx-xlx/goindex#get-google-clientid-and-secretid)
+Select Role `1`
+
+Follow the steps, verify your google drive and complete the setup
+
+Run `./rclone lsd gdrive:` to see if it is configured correctly. All the folders in `My Drive` will be listed
+
+Note: It is recommended to use your own `CLIENT_ID` & `CLIENT_SECRET`, refer [here](https://github.com/alx-xlx/goindex#get-google-clientid-and-secretid)
 
 ## Auto Backup
 
