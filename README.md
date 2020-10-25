@@ -5,7 +5,13 @@ BUT you can use this even for Wordpress and all other forums
 
 [Click Here] to see the list of Cloud Storages we can upload our Backups to
 
+## Screenshots
 
+![backup-flarum-server](images/backup-flarum-server.png)
+
+![backup-flarum-google-drive](backup-flarum-google-drive.png)
+
+```sh
 # #!/usr/bin/env bash
 NAMEDATE=`date +%F_%H-%M_%s`_`whoami` && echo $NAMEDATE
 mkdir ~/flarum_backup/$NAMEDATE -m 0755 && echo "Directory Created"
@@ -15,6 +21,7 @@ chmod -R 0644 ~/flarum_backup/$NAMEDATE/* && echo "Directory Permission Restored
 /home/<HOSTINGUSERNAME>/flarum_backup/rclone copy ~/flarum_backup/$NAMEDATE "mycloud:Flarum Backup/$NAMEDATE"
 cd ~/flarum_backup; find . -type d -mtime +2 -exec rm -rf {} \; 2>&1 && echo "Directory older than 2 days Deleted !!"
 exit 0 
+```
 
 ## Auto Backup
 
