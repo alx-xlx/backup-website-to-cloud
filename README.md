@@ -95,7 +95,7 @@ bash update_backup.sh
 ```
 OR
 
-You can run each command individually to see how much resource each piece of command takes
+You can run each command individually to see how much resource it takes for specific task
 
 
 
