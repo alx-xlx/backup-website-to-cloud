@@ -9,7 +9,7 @@ BUT you can use this even for Wordpress and all other forums
 
 ![backup-flarum-server](images/backup-flarum-server.png)
 
-![backup-flarum-google-drive](backup-flarum-google-drive.png)
+![backup-flarum-google-drive](images/backup-flarum-google-drive.png)
 
 ```sh
 # #!/usr/bin/env bash
