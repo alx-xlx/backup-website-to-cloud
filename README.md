@@ -61,7 +61,11 @@ seafile
 
 ![backup-flarum-server](https://raw.githubusercontent.com/alx-xlx/backup-flarum/main/images/backup-flarum-server.png)
 
+![backup-flarum-files](https://raw.githubusercontent.com/alx-xlx/backup-flarum/main/images/backup-flarum-files.png)
+
+
 ![backup-flarum-google-drive](https://raw.githubusercontent.com/alx-xlx/backup-flarum/main/images/backup-flarum-google-drive.png)
+
 
 ## Hello r4nchy, Please explain how will this work ?
 
