@@ -7,7 +7,7 @@ BUT you can use this even for Wordpress and all other forums
 
 [Click Here](https://rclone.org/overview/) to see the list of Cloud Storages we can upload our Backups to
 
-# Make Sure to Create a Backup of your Server before trying
+## Make Sure to Create a Backup of your Server before trying
 *2nd last line in script is dangerous if you don't point it to correct directory*
 
 ## Screenshots
@@ -79,7 +79,19 @@ Run `./rclone lsd gdrive:` to see if it is configured correctly. All the folders
 
 Note: It is recommended to use your own `CLIENT_ID` & `CLIENT_SECRET`, refer [here](https://github.com/alx-xlx/goindex#get-google-clientid-and-secretid)
 
-## Auto Backup
+## Backup Manually
+
+You can simply open SSH and Run
+
+```sh
+bash update_backup.sh
+```
+OR
+
+You can run commands individually to see how much resource it takes for each specific task
+
+
+## Automatic/Schedule Backup
 
 If you have "Cron Jobs" service in your c-panel then 
 
@@ -92,21 +104,11 @@ The above cronjob will run the `update_backup.sh` everyday and backup everything
 *You can also create a python OR nodejs script to automate incase you don't have Cron in your C-PANEL*
 
 
-## Backup Manually
-
-You can simply open SSH and Run
-
-```sh
-bash update_backup.sh
-```
-OR
-
-You can run each command individually to see how much resource it takes for specific task
 
 
 
 ## Cons
 
-- once While using google drive in rclone, new "Flarum Backup" folders were being created each time a new upload was made (however I couldn't reproduce the issue later)
+- While using google drive in rclone, new "Flarum Backup" folders were being created each time a new upload were made (however I couldn't reproduce the issue later)
 
 - your email and password for few cloud storages may float around in the `/home/HOSTINGUSERNAME/.config/rclone/rclone.conf` file
