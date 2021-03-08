@@ -2,9 +2,11 @@
 ![flarum](https://i.imgur.com/bL7WdcT.jpg)
 [/center] -->
 <div align="center">
-<img src="https://i.imgur.com/bL7WdcT.jpg" alt="awesome-forums" height="">
+<img src="https://i.imgur.com/cN9utR1.png" alt="backup forums" height="">
 
 </div>
+
+### This tool will automatically backup any websites, forums etc from your server (e.g Shared Hosting) to your favourite Cloud Storage
 
 # backup-flarum
  This is a script to push a backup of your Flarum Instance to Cloud Storage using rclone
@@ -66,7 +68,7 @@ seafile
 ![backup-flarum-google-drive](https://raw.githubusercontent.com/alx-xlx/backup-flarum/main/images/backup-flarum-google-drive.png)
 
 
-## Hello r4nchy, Please explain how will this work ?
+## Please explain how will this work ?
 
 - a directory with current date and time will be created
 - zipped database & flarum folder will be stored in the newly created folder
